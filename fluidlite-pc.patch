@@ -1,0 +1,11 @@
+--- FluidLite-7b5f2798d5c0f34e5436530412fe51e5183e8aa4/fluidlite.pc.in.orig	2017-03-03 19:35:14.000000000 +0100
++++ FluidLite-7b5f2798d5c0f34e5436530412fe51e5183e8aa4/fluidlite.pc.in	2020-04-05 18:29:49.495052148 +0200
+@@ -1,6 +1,6 @@
+ prefix=@CMAKE_INSTALL_PREFIX@
+ exec_prefix=${prefix}
+-libdir=${exec_prefix}/lib
+-includedir=${prefix}/include
++libdir=${exec_prefix}/lib@LIB_SUFFIX@
++includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
+ 
+ Name: fluidlite
